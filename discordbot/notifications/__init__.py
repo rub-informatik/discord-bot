@@ -9,6 +9,7 @@ class NotificationsComponent(BotComponent):
         super().__init__(**opts)
         # configure the component
         # access the client using `self.client`
+        self.logger.info("Hello from NotificationsComponent")
 
     async def on_ready(self):
         # The client is ready to send and receive messages

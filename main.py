@@ -16,7 +16,9 @@ def create_components(bot: DiscordBot):
     bot.add_component(RolesComponent, "roles")
 
 
-if __name__ == "__main__":
+def main():
+    """Configure and start the bot"""
+
     logging.basicConfig(level=logging.INFO)
 
     client = DiscordClient(from_env("DISCORD_TOKEN"))
@@ -24,3 +26,7 @@ if __name__ == "__main__":
     create_components(bot)
 
     bot.run()
+
+
+if __name__ == "__main__":
+    main()
