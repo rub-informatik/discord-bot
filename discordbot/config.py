@@ -3,6 +3,10 @@
 import os
 import sys
 
+# loading .env is normally done by pipenv, but not when running in PyCharm
+from dotenv import load_dotenv
+load_dotenv()
+
 
 def from_env(name: str, default=None, type_=str):
     """Get a configuration value from the environment"""
