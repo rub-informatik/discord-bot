@@ -34,4 +34,4 @@ DISCORD_TOKEN="<put your token here>"
 ### Components
 
 * [`NotificationsComponent`](./discordbot/notifications/__init__.py) (in [`discordbot/notifications/`](./discordbot/notifications/))
-* [`RolesComponent`](./discordbot/roles/__init__.py) (in [`discordbot/roles/`](./discordbot/notifications/))
+* [`RolesComponent`](./discordbot/roles/__init__.py) (in [`discordbot/roles/`](./discordbot/roles/))
