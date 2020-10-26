@@ -24,7 +24,7 @@ def from_env(name: str, *, default=None, optional=False, type_=str):
     >>> from_env("SOME_INT", type_=int)
     """
 
-    if __debug__ and not name.upper():
+    if __debug__ and not name.isupper():
         raise ValueError("Names of environment variables should be upper case by convention")
 
     value = os.getenv(name)
